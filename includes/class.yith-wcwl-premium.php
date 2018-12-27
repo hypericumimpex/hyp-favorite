@@ -345,7 +345,7 @@ if ( !class_exists( 'YITH_WCWL_Premium' ) ) {
 				$redirect = esc_url_raw( urldecode( $_GET['wishlist-redirect'] ) );
 			}
 
-			return $redirect;
+			return apply_filters('yith_wcwl_login_register_redirect',$redirect);
 		}
 
 		/* === WOOCOMMERCE EMAIL METHODS === */
