@@ -3,7 +3,7 @@
  * Plugin Name: HYP Favorite
  * Plugin URI: https://github.com/hypericumimpex/hyp-favorite/
  * Description: <code><strong>HYP Favorite</strong></code> oferă utilizatorilor posibilitatea de a crea, gestiona și partaja liste cu produse favorite.
- * Version: 2.2.5
+ * Version: 2.2.7
  * Author: YITH
  * Author URI: https://github.com/hypericumimpex/
  * Text Domain: yith-woocommerce-wishlist
@@ -134,7 +134,7 @@ if( ! function_exists( 'yith_wcwl_install_woocommerce_admin_notice' ) ) {
     function yith_wcwl_install_woocommerce_admin_notice() {
         ?>
         <div class="error">
-            <p><?php 'YITH WooCommerce Wishlist' . _e( 'is enabled but not effective. It requires WooCommerce in order to work.', 'yith-woocommerce-wishlist' ); ?></p>
+            <p><?php echo 'YITH WooCommerce Wishlist ' . __( 'is enabled but not effective. It requires WooCommerce in order to work.', 'yith-woocommerce-wishlist' ); ?></p>
         </div>
     <?php
     }
