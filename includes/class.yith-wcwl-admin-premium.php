@@ -96,8 +96,8 @@ if ( !class_exists( 'YITH_WCWL_Admin_Premium' ) ) {
 			add_action( 'admin_init', array( $this, 'trigger_promotion_email' ) );
 
 			// register plugin to licence/update system
-			add_action( 'wp_loaded', array( $this, 'register_plugin_for_activation' ), 99 );
-			add_action( 'admin_init', array( $this, 'register_plugin_for_updates' ) );
+			//add_action( 'wp_loaded', array( $this, 'register_plugin_for_activation' ), 99 );
+			//add_action( 'admin_init', array( $this, 'register_plugin_for_updates' ) );
 
 			// filter pointer content for premium version
 			add_filter( 'yith_wcwl_activated_pointer_content', array( $this, 'filter_activated_pointer_content' ) );

@@ -3,8 +3,8 @@
  * Plugin Name: HYP Favorite
  * Plugin URI: https://github.com/hypericumimpex/hyp-favorite/
  * Description: <code><strong>HYP Favorite</strong></code> oferă utilizatorilor posibilitatea de a crea, gestiona și partaja liste cu produse favorite.
- * Version: 2.2.7
- * Author: YITH
+ * Version: 2.2.8
+ * Author: Romeo C.
  * Author URI: https://github.com/hypericumimpex/
  * Text Domain: yith-woocommerce-wishlist
  * Domain Path: /languages/

@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Wishlist\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
-"POT-Creation-Date: 2018-12-21 10:17:03+00:00\n"
-"PO-Revision-Date: 2018-10-04 14:49+0200\n"
+"POT-Creation-Date: 2019-02-12 14:27+0100\n"
+"PO-Revision-Date: 2019-02-12 14:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
 "__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
 "_nx_noop:4c,1,2\n"
@@ -42,24 +42,25 @@ msgstr "Premium Versie"
 
 #: includes/class.yith-wcwl-admin-init.php:1015
 msgid "Enable all plugin features"
-msgstr ""
+msgstr "Schakel alle features in"
 
 #: includes/class.yith-wcwl-admin-init.php:1016
 msgid ""
 "Be sure to select at least one option in the Wishlist page menu in this "
 "settings page"
 msgstr ""
+"Zorg ervoor dat u ten minste één optie selecteert in het menu Favorieten op "
+"deze instellingenpagina"
 
 #: includes/class.yith-wcwl-admin-init.php:1017
 msgctxt "[Part of]: Also, please read the plugin documentation"
 msgid "Also, please read the plugin"
-msgstr ""
+msgstr "En lees svp de plugin"
 
 #: includes/class.yith-wcwl-admin-init.php:1018
-#, fuzzy
 msgctxt "[Part Of]: Also, please read the plugin documentation"
 msgid "documentation"
-msgstr "Plugin Documentatie"
+msgstr "documentatie"
 
 #: includes/class.yith-wcwl-admin-init.php:1024
 msgid "Upgrade to the PREMIUM VERSION"
@@ -1037,84 +1038,88 @@ msgid "Select a Wishlist"
 msgstr "Selecteer een Wishlist"
 
 #: includes/class.yith-wcwl-shortcode.php:45
-#, fuzzy
 msgctxt "[gutenberg]: block name"
 msgid "YITH Add to Wishlist"
-msgstr "Toevoegen aan Wishlist"
+msgstr "YITH Toevoegen aan Wishlist"
 
 #: includes/class.yith-wcwl-shortcode.php:46
-#, fuzzy
 msgctxt "[gutenberg]: block description"
 msgid "Shows Add to Wishlist button"
-msgstr "\"Toevoegen aan wishlist\" knop"
+msgstr "\"Toevoegen aan wishlist\" knop weergeven"
 
 #: includes/class.yith-wcwl-shortcode.php:51
 msgid ""
 "ID of the product to add to wishlist (leave empty to use global product)"
 msgstr ""
+"ID van het product om toe te voegen aan wishlist (laat leeg om wereldwijd "
+"product te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:56
 msgid "Url of wishlist page (leave empty to use default)"
-msgstr ""
+msgstr "URL van wenslijstpagina (leeg laten om standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:61
 msgid "Button label (leave empty to use default)"
-msgstr ""
+msgstr "Knooplabel (laat leeg om standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:66
 msgid "\"Browse wishlist\" label (leave empty to use default)"
-msgstr ""
+msgstr "\"Browse wishlist\" label (laat leeg om standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:71
-#, fuzzy
 msgid "\"Product already in wishlist\" label (leave empty to use default)"
-msgstr "\"Product is al toegevoegd aan wishlist\" tekst"
+msgstr ""
+"Label 'Product al in verlanglijstje' (laat leeg om standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:76
 msgid "\"Product added to wishlist\" label (leave empty to use default)"
 msgstr ""
+"\"Product toegevoegd aan wenslijst\" -label (laat leeg om standaard te "
+"gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:81
 msgid ""
 "Icon for the button (use any FontAwesome valid class, or leave empty to use "
 "default)"
 msgstr ""
+"Pictogram voor de knop (gebruik een willekeurige klasse van FontAwesome of "
+"laat deze leeg om de standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:86
 msgid "Additional css classes for the button (leave empty to use default)"
-msgstr ""
+msgstr "Extra css-klassen voor de knop (laat leeg om standaard te gebruiken)"
 
 #: includes/class.yith-wcwl-shortcode.php:94
-#, fuzzy
 msgctxt "[gutenberg]: block name"
 msgid "YITH Wishlist"
 msgstr "YITH Wishlist"
 
 #: includes/class.yith-wcwl-shortcode.php:95
-#, fuzzy
 msgctxt "[gutenberg]: block description"
 msgid "Shows list of products in wishlist"
-msgstr "Eenheidsprijs weergeven voor ieder product in de Wishlist"
+msgstr "Toont de lijst met producten in de verlanglijst"
 
 #: includes/class.yith-wcwl-shortcode.php:100
 msgid "Choose whether to paginate items in the wishlist or show them all"
 msgstr ""
+"Kies of items in de verlanglijst moeten worden gepagineerd of laat ze "
+"allemaal zien"
 
 #: includes/class.yith-wcwl-shortcode.php:103
 msgid "Paginate"
-msgstr ""
+msgstr "Paginering"
 
 #: includes/class.yith-wcwl-shortcode.php:104
 msgid "Do not paginate"
-msgstr ""
+msgstr "Items niet pagineren"
 
 #: includes/class.yith-wcwl-shortcode.php:109
 msgid "Number of items to show for each page"
-msgstr ""
+msgstr "Aantal items dat voor elke pagina wordt weergegeven"
 
 #: includes/class.yith-wcwl-shortcode.php:114
 msgid "ID of the wishlist to show (EG: K6EOWXB888ZD)"
-msgstr ""
+msgstr "ID van de te tonen wishlist (EG: K6EOWXB888ZD)"
 
 #: includes/class.yith-wcwl-shortcode.php:386
 #: includes/class.yith-wcwl-ui.php:164
@@ -1287,9 +1292,8 @@ msgid "A product of your wishlist is on sale"
 msgstr "Een product van uw wishlist is in de aanbieding"
 
 #: includes/emails/class.yith-wcwl-promotion-email.php:219
-#, fuzzy
 msgid "Product image"
-msgstr "Productnaam"
+msgstr "Productafbeelding"
 
 #: includes/emails/class.yith-wcwl-promotion-email.php:334
 msgid "Email HTML Content"
@@ -1568,11 +1572,10 @@ msgid "Show manage link"
 msgstr "Link beheren weergeven"
 
 #: init.php:152
-#, fuzzy
 msgid "is enabled but not effective. It requires WooCommerce in order to work."
 msgstr ""
-"YITH WooCommerce Wishlist is ingeschakeld maar werkt niet. Het heeft "
-"WooCommercenodig om te werken."
+"is ingeschakeld, maar niet effectief. Het vereist WooCommerce om te kunnen "
+"werken."
 
 #: templates/add-to-wishlist-popup.php:44
 msgid "My Wishlist"
@@ -1819,13 +1822,12 @@ msgid "Your email"
 msgstr "Uw e-mail"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "YITH WooCommerce Wishlist Premium"
-msgstr "YITH WooCommerce Wishlist"
+msgstr "YITH WooCommerce Wishlist Premium"
 
 #. Plugin URI of the plugin/theme
 msgid "https://yithemes.com/themes/plugins/yith-woocommerce-wishlist/"
-msgstr ""
+msgstr "https://yithemes.com/themes/plugins/yith-woocommerce-wishlist/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -1835,14 +1837,20 @@ msgid ""
 "<a href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for "
 "your e-commerce on <strong>YITH</strong></a>"
 msgstr ""
+"<code><strong>YITH WooCommerce Wishlist </strong></code> geeft uw gebruikers "
+"de mogelijkheid om hun verlanglijstjes te maken, in te vullen, te beheren en "
+"te delen, zodat u hun interesses en behoeften kunt analyseren om uw "
+"marketingstrategieën te verbeteren. <a href=\"https://yithemes.com/\" target="
+"\"_blank\">Krijg meer plug-ins voor uw e-commerce op <strong> YITH</strong></"
+"a>"
 
 #. Author of the plugin/theme
 msgid "YITH"
-msgstr ""
+msgstr "YITH"
 
 #. Author URI of the plugin/theme
 msgid "https://yithemes.com/"
-msgstr ""
+msgstr "https://yithemes.com/"
 
 #~ msgid ""
 #~ "Enable all plugin features. <strong>Be sure to select at least one option "

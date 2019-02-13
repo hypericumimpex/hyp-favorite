@@ -4,12 +4,22 @@ Contributors: yithemes
 Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop
 Requires at least: 4.0
 Tested up to: 5.0.0
-Stable tag: 2.2.7
+Stable tag: 2.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://yithemes.com/docs-plugins/yith-woocommerce-wishlist
 
 == Changelog ==
+
+= 2.2.8 - Released: Feb, 11 - 2019 =
+
+* New: added support to WooCommerce 3.5.4
+* Update: internal plugin framework
+* Update: Dutch translation
+* Fix: added explicit array casting on shortcode to avoid warning
+* Fix: don't add custom classes to body if wishlist page is not set
+* Fix: changed a wrong method in the enqueue style
+* Dev: add filter yith_wcwl_email_share_subject
 
 = 2.2.7 - Released: Dec, 21 - 2018 =
 
