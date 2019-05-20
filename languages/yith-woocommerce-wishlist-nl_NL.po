@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Wishlist\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
-"POT-Creation-Date: 2019-02-12 14:27+0100\n"
+"POT-Creation-Date: 2019-04-11 15:40:39+00:00\n"
 "PO-Revision-Date: 2019-02-12 14:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -21,8 +21,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
 
 #: includes/class.yith-wcwl-admin-init.php:159
-#: includes/class.yith-wcwl-admin-init.php:1484
 #: includes/class.yith-wcwl-admin-init.php:1485
+#: includes/class.yith-wcwl-admin-init.php:1486
 #: includes/class.yith-wcwl-install.php:245
 msgid "Wishlist"
 msgstr "Wishlist"
@@ -40,11 +40,11 @@ msgstr "Kleuren"
 msgid "Premium Version"
 msgstr "Premium Versie"
 
-#: includes/class.yith-wcwl-admin-init.php:1015
+#: includes/class.yith-wcwl-admin-init.php:1009
 msgid "Enable all plugin features"
 msgstr "Schakel alle features in"
 
-#: includes/class.yith-wcwl-admin-init.php:1016
+#: includes/class.yith-wcwl-admin-init.php:1010
 msgid ""
 "Be sure to select at least one option in the Wishlist page menu in this "
 "settings page"
@@ -52,25 +52,25 @@ msgstr ""
 "Zorg ervoor dat u ten minste één optie selecteert in het menu Favorieten op "
 "deze instellingenpagina"
 
-#: includes/class.yith-wcwl-admin-init.php:1017
+#: includes/class.yith-wcwl-admin-init.php:1011
 msgctxt "[Part of]: Also, please read the plugin documentation"
 msgid "Also, please read the plugin"
 msgstr "En lees svp de plugin"
 
-#: includes/class.yith-wcwl-admin-init.php:1018
+#: includes/class.yith-wcwl-admin-init.php:1012
 msgctxt "[Part Of]: Also, please read the plugin documentation"
 msgid "documentation"
 msgstr "documentatie"
 
-#: includes/class.yith-wcwl-admin-init.php:1024
+#: includes/class.yith-wcwl-admin-init.php:1018
 msgid "Upgrade to the PREMIUM VERSION"
 msgstr "Upgrade naar de PREMIUM VERSIE"
 
-#: includes/class.yith-wcwl-admin-init.php:1028
+#: includes/class.yith-wcwl-admin-init.php:1022
 msgid "Discover the Advanced Features"
 msgstr "Ontdenk de Geavanceerde Features"
 
-#: includes/class.yith-wcwl-admin-init.php:1029
+#: includes/class.yith-wcwl-admin-init.php:1023
 msgid ""
 "Upgrade to the PREMIUM VERSION of YITH WOOCOMMERCE WISHLIST to benefit from "
 "all features!"
@@ -78,11 +78,11 @@ msgstr ""
 "Upgrade naar de PREMIUM VERSIE van YITH WOOCOMMERCE WISHLIST om van alle "
 "features te profiteren!"
 
-#: includes/class.yith-wcwl-admin-init.php:1035
+#: includes/class.yith-wcwl-admin-init.php:1029
 msgid "Get Support and Pro Features"
 msgstr "Krijg Support en Pro Features"
 
-#: includes/class.yith-wcwl-admin-init.php:1036
+#: includes/class.yith-wcwl-admin-init.php:1030
 msgid ""
 "By purchasing the premium version of the plugin, you will take advantage of "
 "the advanced features of the product and you will get one year of free "
@@ -92,37 +92,37 @@ msgstr ""
 "geavanceerde features van het product en u krijgt een jaar gratis updates en "
 "support, via ons platform, beschikbaar 24h/24."
 
-#: includes/class.yith-wcwl-admin-init.php:1046
+#: includes/class.yith-wcwl-admin-init.php:1040
 msgid "General Settings"
 msgstr "Algemene Instellingen"
 
-#: includes/class.yith-wcwl-admin-init.php:1053
+#: includes/class.yith-wcwl-admin-init.php:1047
 msgid "Enable YITH Wishlist"
 msgstr "YIYH Wishlist inschakelen"
 
-#: includes/class.yith-wcwl-admin-init.php:1060
+#: includes/class.yith-wcwl-admin-init.php:1054
 msgid "Default wishlist title"
 msgstr "Default wishlist titel"
 
-#: includes/class.yith-wcwl-admin-init.php:1062
-#: includes/class.yith-wcwl-admin-init.php:1063
-#: includes/class.yith-wcwl-admin-init.php:1299
+#: includes/class.yith-wcwl-admin-init.php:1056
+#: includes/class.yith-wcwl-admin-init.php:1057
+#: includes/class.yith-wcwl-admin-init.php:1300
 msgid "My wishlist on %s"
 msgstr "Mijn wishlist op %s"
 
-#: includes/class.yith-wcwl-admin-init.php:1068
+#: includes/class.yith-wcwl-admin-init.php:1062
 msgid "Wishlist Page"
 msgstr "Wishlist pagina"
 
-#: includes/class.yith-wcwl-admin-init.php:1069
+#: includes/class.yith-wcwl-admin-init.php:1063
 msgid "Page contents: [yith_wcwl_wishlist]"
 msgstr "Pagina inhoud: [yith_wcwl_wishlist]"
 
-#: includes/class.yith-wcwl-admin-init.php:1078
+#: includes/class.yith-wcwl-admin-init.php:1072
 msgid "Position"
 msgstr "Positie"
 
-#: includes/class.yith-wcwl-admin-init.php:1079
+#: includes/class.yith-wcwl-admin-init.php:1073
 msgid ""
 "You can add the button in variable products only after the \"Add to Cart\" "
 "button or using the shortcode [yith_wcwl_add_to_wishlist]."
@@ -131,27 +131,27 @@ msgstr ""
 "Winkelwagen\" knop, of door deze shortcode te gebruiken "
 "[yith_wcwl_add_to_wishlist]."
 
-#: includes/class.yith-wcwl-admin-init.php:1085
+#: includes/class.yith-wcwl-admin-init.php:1079
 msgid "After \"Add to cart\""
 msgstr "Na \"Toevoegen aan winkelwagen\""
 
-#: includes/class.yith-wcwl-admin-init.php:1086
+#: includes/class.yith-wcwl-admin-init.php:1080
 msgid "After thumbnails"
 msgstr "Na Thumbnails"
 
-#: includes/class.yith-wcwl-admin-init.php:1087
+#: includes/class.yith-wcwl-admin-init.php:1081
 msgid "After summary"
 msgstr "Na samenvatting"
 
-#: includes/class.yith-wcwl-admin-init.php:1088
+#: includes/class.yith-wcwl-admin-init.php:1082
 msgid "Use shortcode"
 msgstr "Gebruik shortcode"
 
-#: includes/class.yith-wcwl-admin-init.php:1093
+#: includes/class.yith-wcwl-admin-init.php:1087
 msgid "Redirect to cart"
 msgstr "Doorverwijzen naar winkelwagen"
 
-#: includes/class.yith-wcwl-admin-init.php:1094
+#: includes/class.yith-wcwl-admin-init.php:1088
 msgid ""
 "Redirect to cart page if \"Add to cart\" button is clicked in the wishlist "
 "page."
@@ -159,206 +159,216 @@ msgstr ""
 "Doorverwijzen naar winkelwagen pagina als \"Toevoegen aan winkelwagen\" knop "
 "is aangeklikt in de wishlist pagina."
 
-#: includes/class.yith-wcwl-admin-init.php:1100
+#: includes/class.yith-wcwl-admin-init.php:1094
 msgid "Remove if added to the cart"
 msgstr "Verwijder als het toegevoegd is aan winkelwagen"
 
-#: includes/class.yith-wcwl-admin-init.php:1101
+#: includes/class.yith-wcwl-admin-init.php:1095
 msgid "Remove the product from the wishlist if it has been added to the cart."
 msgstr ""
 "Verwijder het product uit de wishlist als het is toegevoegd aan de "
 "winkelwagen."
 
-#: includes/class.yith-wcwl-admin-init.php:1107
+#: includes/class.yith-wcwl-admin-init.php:1101
 msgid "\"Add to Wishlist\" text"
 msgstr "\"Toevoegen aan Wishlist\" tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1109
+#: includes/class.yith-wcwl-admin-init.php:1103
 msgid "Add to Wishlist"
 msgstr "Toevoegen aan Wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1114
+#: includes/class.yith-wcwl-admin-init.php:1108
 msgid "\"Browse wishlist\" text"
 msgstr "\"Browse wishlist\" tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1116
+#: includes/class.yith-wcwl-admin-init.php:1110
 #: includes/class.yith-wcwl-ui.php:82 includes/class.yith-wcwl-ui.php:83
 msgid "Browse Wishlist"
 msgstr "Browse Wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1121
+#: includes/class.yith-wcwl-admin-init.php:1115
 msgid "\"Product already in wishlist\" text"
 msgstr "\"Product is al toegevoegd aan wishlist\" tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1123
+#: includes/class.yith-wcwl-admin-init.php:1117
 #: includes/class.yith-wcwl-ui.php:83
 msgid "The product is already in the wishlist!"
 msgstr "Het product is al toegevoegd aan wishlist!"
 
-#: includes/class.yith-wcwl-admin-init.php:1128
+#: includes/class.yith-wcwl-admin-init.php:1122
 msgid "\"Product added\" text"
 msgstr "\"Product toegevoegd\" tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1130
+#: includes/class.yith-wcwl-admin-init.php:1124
 #: includes/class.yith-wcwl-ui.php:82
 msgid "Product added!"
 msgstr "Product toegevoegd!"
 
-#: includes/class.yith-wcwl-admin-init.php:1135
+#: includes/class.yith-wcwl-admin-init.php:1129
 msgid "\"Add to Cart\" text"
 msgstr "\"Toevoegen aan Winkelwagen\" tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1137
+#: includes/class.yith-wcwl-admin-init.php:1131
 msgid "Add to Cart"
 msgstr "Toevoegen aan Winkelwagen"
 
-#: includes/class.yith-wcwl-admin-init.php:1142
+#: includes/class.yith-wcwl-admin-init.php:1136
 msgid "Show Unit price"
 msgstr "Eenheidsprijs weergeven"
 
-#: includes/class.yith-wcwl-admin-init.php:1143
+#: includes/class.yith-wcwl-admin-init.php:1137
 msgid "Show unit price for each product in wishlist"
 msgstr "Eenheidsprijs weergeven voor ieder product in de Wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1150
+#: includes/class.yith-wcwl-admin-init.php:1144
 msgid "Show \"Add to Cart\" button"
 msgstr "Toon \"Toevoegen aan Winkelwagen\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1151
+#: includes/class.yith-wcwl-admin-init.php:1145
 msgid "Show \"Add to Cart\" button for each product in wishlist"
 msgstr ""
 "Toon \"Toevoegen aan Winkelwagen\" knop voor ieder product in de wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1158
+#: includes/class.yith-wcwl-admin-init.php:1152
 msgid "Show Stock status"
 msgstr "Voorraad status tonen"
 
-#: includes/class.yith-wcwl-admin-init.php:1159
+#: includes/class.yith-wcwl-admin-init.php:1153
 msgid ""
 "Show \"In stock\" or \"Out of stock\" label for each product in wishlist"
 msgstr ""
 "Toon \"Op voorraad\" of \"Niet op voorraad\" label voor ieder product in de "
 "wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1166
+#: includes/class.yith-wcwl-admin-init.php:1160
 msgid "Show Date of addition"
 msgstr "Toon datum van toevoegen"
 
-#: includes/class.yith-wcwl-admin-init.php:1167
+#: includes/class.yith-wcwl-admin-init.php:1161
 msgid "Show the date when users have added a product to the wishlist"
 msgstr ""
 "Toon datum waarop de gebruikers producten hebben toegevoegd aan de wishlist"
 
-#: includes/class.yith-wcwl-admin-init.php:1174
+#: includes/class.yith-wcwl-admin-init.php:1168
 msgid "Add second remove button"
 msgstr "Voeg tweede verwijder knop toe"
 
-#: includes/class.yith-wcwl-admin-init.php:1175
+#: includes/class.yith-wcwl-admin-init.php:1169
 msgid "Add a second remove button in the last column, with extended label"
 msgstr ""
 "Voeg een tweede verwijder knop toe in de laatste kolom, met extended label"
 
-#: includes/class.yith-wcwl-admin-init.php:1190
+#: includes/class.yith-wcwl-admin-init.php:1184
 msgid "Styles"
 msgstr "Stijlen"
 
-#: includes/class.yith-wcwl-admin-init.php:1197
+#: includes/class.yith-wcwl-admin-init.php:1191
 msgid "Use buttons"
 msgstr "Gebruik knoppen"
 
-#: includes/class.yith-wcwl-admin-init.php:1198
+#: includes/class.yith-wcwl-admin-init.php:1192
 msgid "Use buttons instead of simple anchors."
 msgstr "Gebruik knoppen in plaats van simpele ankers."
 
-#: includes/class.yith-wcwl-admin-init.php:1204
+#: includes/class.yith-wcwl-admin-init.php:1198
 msgid "Custom CSS"
 msgstr "Custom CSS"
 
-#: includes/class.yith-wcwl-admin-init.php:1211
+#: includes/class.yith-wcwl-admin-init.php:1205
 msgid "Use theme style"
 msgstr "Gebruik theme stijl"
 
-#: includes/class.yith-wcwl-admin-init.php:1212
+#: includes/class.yith-wcwl-admin-init.php:1206
 msgid "Use the theme style."
 msgstr "Gebruik de theme stijl."
 
-#: includes/class.yith-wcwl-admin-init.php:1218
+#: includes/class.yith-wcwl-admin-init.php:1212
 msgid "Rounded buttons"
 msgstr "Ronde knoppen"
 
-#: includes/class.yith-wcwl-admin-init.php:1219
+#: includes/class.yith-wcwl-admin-init.php:1213
 msgid "Make button corners rounded"
 msgstr "Maak knophoeken rond"
 
-#: includes/class.yith-wcwl-admin-init.php:1225
+#: includes/class.yith-wcwl-admin-init.php:1219
 msgid "\"Add to Wishlist\" icon"
 msgstr "\"Toevoegen aan Wishlist\" icoon"
 
-#: includes/class.yith-wcwl-admin-init.php:1226
+#: includes/class.yith-wcwl-admin-init.php:1220
 msgid "Add an icon to the \"Add to Wishlist\" button"
 msgstr "Een icoon toevoegen aan de \"Toevoegen aan Wishlist\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1236
+#: includes/class.yith-wcwl-admin-init.php:1230
 msgid "\"Add to Cart\" icon"
 msgstr "\"Toevoegen aan Winkelwagen\" icoon"
 
-#: includes/class.yith-wcwl-admin-init.php:1237
+#: includes/class.yith-wcwl-admin-init.php:1231
 msgid "Add an icon to the \"Add to Cart\" button"
 msgstr "Een icoon toevoegen aan de \"Toevoegen aan Winkelwagen\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1255
+#: includes/class.yith-wcwl-admin-init.php:1249
 msgid "Social Networks & Share"
 msgstr "Social Networks & Delen"
 
-#: includes/class.yith-wcwl-admin-init.php:1262
+#: includes/class.yith-wcwl-admin-init.php:1256
 msgid "Share on Facebook"
 msgstr "Delen op Facebook"
 
-#: includes/class.yith-wcwl-admin-init.php:1263
+#: includes/class.yith-wcwl-admin-init.php:1257
 msgid "Show \"Share on Facebook\" button"
 msgstr "Toon \"Delen op Facebook\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1269
+#: includes/class.yith-wcwl-admin-init.php:1263
 msgid "Tweet on Twitter"
 msgstr "Tweet op Twitter"
 
-#: includes/class.yith-wcwl-admin-init.php:1270
+#: includes/class.yith-wcwl-admin-init.php:1264
 msgid "Show \"Tweet on Twitter\" button"
 msgstr "Toon \"Tweet op Twitter\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1276
+#: includes/class.yith-wcwl-admin-init.php:1270
 msgid "Pin on Pinterest"
 msgstr "Pin op Pinterest"
 
-#: includes/class.yith-wcwl-admin-init.php:1277
+#: includes/class.yith-wcwl-admin-init.php:1271
 msgid "Show \"Pin on Pinterest\" button"
 msgstr "Toon \"Pin op Pinterest\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1283
+#: includes/class.yith-wcwl-admin-init.php:1277
 msgid "Share on Google+"
 msgstr "Delen op Google+"
 
-#: includes/class.yith-wcwl-admin-init.php:1284
+#: includes/class.yith-wcwl-admin-init.php:1278
 msgid "Show \"Share on Google+\" button"
 msgstr "Toon \"Delen op Google+\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1290
+#: includes/class.yith-wcwl-admin-init.php:1284
 msgid "Share by Email"
 msgstr "Delen per e-mail"
 
-#: includes/class.yith-wcwl-admin-init.php:1291
+#: includes/class.yith-wcwl-admin-init.php:1285
 msgid "Show \"Share by Email\" button"
 msgstr "Toon \"Delen per e-mail\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1297
+#: includes/class.yith-wcwl-admin-init.php:1291
+#, fuzzy
+msgid "Share by WhatsApp"
+msgstr "Delen per e-mail"
+
+#: includes/class.yith-wcwl-admin-init.php:1292
+#, fuzzy
+msgid "Show \"Share by WhatsApp\" button ( only on phones )"
+msgstr "Toon \"Delen per e-mail\" knop"
+
+#: includes/class.yith-wcwl-admin-init.php:1298
 msgid "Social title"
 msgstr "Social titel"
 
-#: includes/class.yith-wcwl-admin-init.php:1304
+#: includes/class.yith-wcwl-admin-init.php:1305
 msgid "Social text"
 msgstr "Social tekst"
 
-#: includes/class.yith-wcwl-admin-init.php:1305
+#: includes/class.yith-wcwl-admin-init.php:1306
 msgid ""
 "It will be used by Twitter and Pinterest. Use <strong>%wishlist_url%</"
 "strong> where you want to show the URL of your wishlist."
@@ -366,30 +376,30 @@ msgstr ""
 "Het wordt gebruikt met Twitter en Pinterest. Gebruik <strong>%wishlist_url"
 "%<strong>op de plaats waar u de URL van uw wishlist wilt weergeven."
 
-#: includes/class.yith-wcwl-admin-init.php:1312
+#: includes/class.yith-wcwl-admin-init.php:1313
 msgid "Social image URL"
 msgstr "Social afbeelding URL"
 
-#: includes/class.yith-wcwl-admin-init.php:1313
+#: includes/class.yith-wcwl-admin-init.php:1314
 msgid "It will be used by Pinterest."
 msgstr "Het wordt gebruikt door Pinterest."
 
-#: includes/class.yith-wcwl-admin-init.php:1327
+#: includes/class.yith-wcwl-admin-init.php:1328
 msgid ""
 "If you want to take advantage of this feature, you could consider to "
 "purchase the %s."
 msgstr ""
 "Als u wilt profiteren van deze feature, dan kunt u overwegen de %s te kopen."
 
-#: includes/class.yith-wcwl-admin-init.php:1332
+#: includes/class.yith-wcwl-admin-init.php:1333
 msgid "YITH WooCommerce Frequently Bought Together Integration"
 msgstr "YITH WooCommerce Frequently Bought Together Integratie"
 
-#: includes/class.yith-wcwl-admin-init.php:1339
+#: includes/class.yith-wcwl-admin-init.php:1340
 msgid "Enable slider in wishlist"
 msgstr "Slider in wishlist inschakelen"
 
-#: includes/class.yith-wcwl-admin-init.php:1340
+#: includes/class.yith-wcwl-admin-init.php:1341
 msgid ""
 "Choose to enable product slider in wishlist page with linked products (<a "
 "href=\"%s\" class=\"thickbox\">Example</a>). %s"
@@ -397,84 +407,84 @@ msgstr ""
 "Kies om product slider in te schakelen in wishlist pagina met gelinkte "
 "producten (<a href=\"%s\" class=\"thickbox\">Voorbeeld</a>). %s"
 
-#: includes/class.yith-wcwl-admin-init.php:1376
+#: includes/class.yith-wcwl-admin-init.php:1377
 msgid "\"Add to wishlist\" button"
 msgstr "\"Toevoegen aan wishlist\" knop"
-
-#: includes/class.yith-wcwl-admin-init.php:1379
-#: includes/class.yith-wcwl-admin-init.php:1397
-#: includes/class.yith-wcwl-admin-init.php:1415
-#: includes/class.yith-wcwl-admin-init.php:1433
-#: includes/class.yith-wcwl-admin-init.php:1451
-msgid "Background"
-msgstr "Achtergrond"
 
 #: includes/class.yith-wcwl-admin-init.php:1380
 #: includes/class.yith-wcwl-admin-init.php:1398
 #: includes/class.yith-wcwl-admin-init.php:1416
 #: includes/class.yith-wcwl-admin-init.php:1434
 #: includes/class.yith-wcwl-admin-init.php:1452
-msgid "Text"
-msgstr "Tekst"
+msgid "Background"
+msgstr "Achtergrond"
 
 #: includes/class.yith-wcwl-admin-init.php:1381
 #: includes/class.yith-wcwl-admin-init.php:1399
 #: includes/class.yith-wcwl-admin-init.php:1417
 #: includes/class.yith-wcwl-admin-init.php:1435
 #: includes/class.yith-wcwl-admin-init.php:1453
+msgid "Text"
+msgstr "Tekst"
+
+#: includes/class.yith-wcwl-admin-init.php:1382
+#: includes/class.yith-wcwl-admin-init.php:1400
+#: includes/class.yith-wcwl-admin-init.php:1418
+#: includes/class.yith-wcwl-admin-init.php:1436
+#: includes/class.yith-wcwl-admin-init.php:1454
 msgid "Border"
 msgstr "Rand"
-
-#: includes/class.yith-wcwl-admin-init.php:1388
-#: includes/class.yith-wcwl-admin-init.php:1406
-#: includes/class.yith-wcwl-admin-init.php:1424
-#: includes/class.yith-wcwl-admin-init.php:1442
-msgid "Background (hover)"
-msgstr "Achtergrond (hover)"
 
 #: includes/class.yith-wcwl-admin-init.php:1389
 #: includes/class.yith-wcwl-admin-init.php:1407
 #: includes/class.yith-wcwl-admin-init.php:1425
 #: includes/class.yith-wcwl-admin-init.php:1443
-msgid "Text (hover)"
-msgstr "Tekst (hover)"
+msgid "Background (hover)"
+msgstr "Achtergrond (hover)"
 
 #: includes/class.yith-wcwl-admin-init.php:1390
 #: includes/class.yith-wcwl-admin-init.php:1408
 #: includes/class.yith-wcwl-admin-init.php:1426
 #: includes/class.yith-wcwl-admin-init.php:1444
+msgid "Text (hover)"
+msgstr "Tekst (hover)"
+
+#: includes/class.yith-wcwl-admin-init.php:1391
+#: includes/class.yith-wcwl-admin-init.php:1409
+#: includes/class.yith-wcwl-admin-init.php:1427
+#: includes/class.yith-wcwl-admin-init.php:1445
 msgid "Border (hover)"
 msgstr "Rand (hover)"
 
-#: includes/class.yith-wcwl-admin-init.php:1394
+#: includes/class.yith-wcwl-admin-init.php:1395
 msgid "\"Add to Cart\" button"
 msgstr "\"Toevoegen aan Winkelwagen\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1412
+#: includes/class.yith-wcwl-admin-init.php:1413
 msgid "\"Style 1\" button"
 msgstr "\"Stijl 1\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1430
+#: includes/class.yith-wcwl-admin-init.php:1431
 msgid "\"Style 2\" button"
 msgstr "\"Stijl 2\" knop"
 
-#: includes/class.yith-wcwl-admin-init.php:1448
+#: includes/class.yith-wcwl-admin-init.php:1449
 msgid "Wishlist table"
 msgstr "Wishlist tabel"
 
-#: includes/class.yith-wcwl-admin-init.php:1457
+#: includes/class.yith-wcwl-admin-init.php:1458
 msgid "Headers"
 msgstr "Headers"
 
-#: includes/class.yith-wcwl-admin-init.php:1460
+#: includes/class.yith-wcwl-admin-init.php:1461
 msgid "Background color"
 msgstr "Achtergrondkleur"
 
-#: includes/class.yith-wcwl-admin-init.php:1550
+#: includes/class.yith-wcwl-admin-init.php:1551
 msgid "Wishlist Activated"
 msgstr "Wishlist geactiveerd"
 
-#: includes/class.yith-wcwl-admin-init.php:1551
+#: includes/class.yith-wcwl-admin-init.php:1552
 msgid ""
 "In the YIT Plugin tab you can find the Wishlist options. With this menu, you "
 "can access to all the settings of our plugins that you have activated. "
@@ -486,11 +496,11 @@ msgstr ""
 "Wishlist is beschikbaar in een geweldige PREMIUM versie met vele nieuwe "
 "opties, <a href=\"%s\"> ontdek het nu</a>."
 
-#: includes/class.yith-wcwl-admin-init.php:1562
+#: includes/class.yith-wcwl-admin-init.php:1563
 msgid "Wishlist Updated"
 msgstr "Wishlist geupdate"
 
-#: includes/class.yith-wcwl-admin-init.php:1563
+#: includes/class.yith-wcwl-admin-init.php:1564
 msgid ""
 "From now on, you can find all the options of Wishlist under YIT Plugin -> "
 "Wishlist instead of WooCommerce -> Settings -> Wishlist, as in the previous "
@@ -804,7 +814,7 @@ msgstr "Wishlist \"Vraag om een offerte\""
 msgid "Wishlist Promotion"
 msgstr "Wishlist Promotie"
 
-#: includes/class.yith-wcwl-init.php:437
+#: includes/class.yith-wcwl-init.php:448
 msgid ""
 "We are sorry, but this feature is available only if cookies are enabled on "
 "your browser."
@@ -812,7 +822,7 @@ msgstr ""
 "Het spijt ons, maar deze feature is alleen beschikbaar als u cookies "
 "inschakeld op uw browser."
 
-#: includes/class.yith-wcwl-init.php:438
+#: includes/class.yith-wcwl-init.php:449
 msgid "Product correctly added to cart"
 msgstr "Product is juist toegevoegd aan de winkelwagen"
 
@@ -1027,57 +1037,57 @@ msgstr "Prive"
 msgid "Public"
 msgstr "Publiek"
 
-#: includes/class.yith-wcwl-shortcode-premium.php:109
-#: includes/class.yith-wcwl-shortcode-premium.php:150
+#: includes/class.yith-wcwl-shortcode-premium.php:110
+#: includes/class.yith-wcwl-shortcode-premium.php:151
 msgid "Sorry! This feature is available only for logged users"
 msgstr ""
 "Excuses! Deze feature is uitsluitend beschikbaar voor ingelogde gebruikers"
 
-#: includes/class.yith-wcwl-shortcode-premium.php:265
+#: includes/class.yith-wcwl-shortcode-premium.php:266
 msgid "Select a Wishlist"
 msgstr "Selecteer een Wishlist"
 
-#: includes/class.yith-wcwl-shortcode.php:45
+#: includes/class.yith-wcwl-shortcode.php:47
 msgctxt "[gutenberg]: block name"
 msgid "YITH Add to Wishlist"
 msgstr "YITH Toevoegen aan Wishlist"
 
-#: includes/class.yith-wcwl-shortcode.php:46
+#: includes/class.yith-wcwl-shortcode.php:48
 msgctxt "[gutenberg]: block description"
 msgid "Shows Add to Wishlist button"
 msgstr "\"Toevoegen aan wishlist\" knop weergeven"
 
-#: includes/class.yith-wcwl-shortcode.php:51
+#: includes/class.yith-wcwl-shortcode.php:53
 msgid ""
 "ID of the product to add to wishlist (leave empty to use global product)"
 msgstr ""
 "ID van het product om toe te voegen aan wishlist (laat leeg om wereldwijd "
 "product te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:56
+#: includes/class.yith-wcwl-shortcode.php:58
 msgid "Url of wishlist page (leave empty to use default)"
 msgstr "URL van wenslijstpagina (leeg laten om standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:61
+#: includes/class.yith-wcwl-shortcode.php:63
 msgid "Button label (leave empty to use default)"
 msgstr "Knooplabel (laat leeg om standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:66
+#: includes/class.yith-wcwl-shortcode.php:68
 msgid "\"Browse wishlist\" label (leave empty to use default)"
 msgstr "\"Browse wishlist\" label (laat leeg om standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:71
+#: includes/class.yith-wcwl-shortcode.php:73
 msgid "\"Product already in wishlist\" label (leave empty to use default)"
 msgstr ""
 "Label 'Product al in verlanglijstje' (laat leeg om standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:76
+#: includes/class.yith-wcwl-shortcode.php:78
 msgid "\"Product added to wishlist\" label (leave empty to use default)"
 msgstr ""
 "\"Product toegevoegd aan wenslijst\" -label (laat leeg om standaard te "
 "gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:81
+#: includes/class.yith-wcwl-shortcode.php:83
 msgid ""
 "Icon for the button (use any FontAwesome valid class, or leave empty to use "
 "default)"
@@ -1085,43 +1095,55 @@ msgstr ""
 "Pictogram voor de knop (gebruik een willekeurige klasse van FontAwesome of "
 "laat deze leeg om de standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:86
+#: includes/class.yith-wcwl-shortcode.php:88
 msgid "Additional css classes for the button (leave empty to use default)"
 msgstr "Extra css-klassen voor de knop (laat leeg om standaard te gebruiken)"
 
-#: includes/class.yith-wcwl-shortcode.php:94
+#: includes/class.yith-wcwl-shortcode.php:96
 msgctxt "[gutenberg]: block name"
 msgid "YITH Wishlist"
 msgstr "YITH Wishlist"
 
-#: includes/class.yith-wcwl-shortcode.php:95
+#: includes/class.yith-wcwl-shortcode.php:97
 msgctxt "[gutenberg]: block description"
 msgid "Shows list of products in wishlist"
 msgstr "Toont de lijst met producten in de verlanglijst"
 
-#: includes/class.yith-wcwl-shortcode.php:100
+#: includes/class.yith-wcwl-shortcode.php:102
 msgid "Choose whether to paginate items in the wishlist or show them all"
 msgstr ""
 "Kies of items in de verlanglijst moeten worden gepagineerd of laat ze "
 "allemaal zien"
 
-#: includes/class.yith-wcwl-shortcode.php:103
+#: includes/class.yith-wcwl-shortcode.php:105
 msgid "Paginate"
 msgstr "Paginering"
 
-#: includes/class.yith-wcwl-shortcode.php:104
+#: includes/class.yith-wcwl-shortcode.php:106
 msgid "Do not paginate"
 msgstr "Items niet pagineren"
 
-#: includes/class.yith-wcwl-shortcode.php:109
+#: includes/class.yith-wcwl-shortcode.php:111
 msgid "Number of items to show for each page"
 msgstr "Aantal items dat voor elke pagina wordt weergegeven"
 
-#: includes/class.yith-wcwl-shortcode.php:114
+#: includes/class.yith-wcwl-shortcode.php:116
 msgid "ID of the wishlist to show (EG: K6EOWXB888ZD)"
 msgstr "ID van de te tonen wishlist (EG: K6EOWXB888ZD)"
 
-#: includes/class.yith-wcwl-shortcode.php:386
+#: includes/class.yith-wcwl-shortcode.php:124
+#, fuzzy
+msgctxt "[gutenberg]: block name"
+msgid "YITH Public Wishlist Link"
+msgstr "YITH Wishlist"
+
+#: includes/class.yith-wcwl-shortcode.php:125
+#, fuzzy
+msgctxt "[gutenberg]: block description"
+msgid "Shows All Public Wishlist"
+msgstr "\"Toevoegen aan wishlist\" knop weergeven"
+
+#: includes/class.yith-wcwl-shortcode.php:396
 #: includes/class.yith-wcwl-ui.php:164
 msgid "Share on:"
 msgstr "Delen op:"
@@ -1744,6 +1766,15 @@ msgstr "Google+"
 #: templates/share.php:44
 msgid "Email"
 msgstr "E-mail"
+
+#: templates/share.php:51
+#, fuzzy
+msgid "My wishlist on "
+msgstr "Mijn wishlist op %s"
+
+#: templates/share.php:51
+msgid "WhatsApp"
+msgstr ""
 
 #: templates/wishlist-create.php:39 templates/wishlist-view.php:41
 msgid "Save"

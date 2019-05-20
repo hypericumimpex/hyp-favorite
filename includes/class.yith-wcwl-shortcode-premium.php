@@ -26,6 +26,9 @@ if( ! class_exists( 'YITH_WCWL_Shortcode_Premium' ) ) {
          * @since 2.0.0
          */
         public function __construct() {
+        	// process init
+        	self::init();
+
             // Filters applied to add params to wishlist views
             add_filter( 'yith_wcwl_available_wishlist_views', array( 'YITH_WCWL_Shortcode_Premium', 'add_wishlist_views' ) );
 	        add_filter( 'yith_wcwl_wishlist_params', array( 'YITH_WCWL_Shortcode_Premium', 'wishlist_view' ), 5, 5 );
@@ -36,6 +39,39 @@ if( ! class_exists( 'YITH_WCWL_Shortcode_Premium' ) ) {
             // Filters applied to add params to add-to-wishlist view
             add_filter( 'yith_wcwl_add_to_wishlist_params', array( 'YITH_WCWL_Shortcode_Premium', 'add_to_wishlist_popup' ) );
         }
+
+	    /**
+	     * Init shortcodes available for the plugin
+	     *
+	     * @return void
+	     */
+	    public static function init() {
+		    // register shortcodes
+		    add_shortcode( 'yith_wcwl_show_public_wishlist', array( 'YITH_WCWL_Shortcode_Premium', 'show_public_wishlist' ) );
+
+		    // register gutenberg blocks
+		    add_action( 'init', array( 'YITH_WCWL_Shortcode_Premium', 'register_gutenberg_blocks' ) );
+        }
+
+	    /**
+	     * Register available gutenberg blocks
+	     *
+	     * @return void
+	     */
+	    public static function register_gutenberg_blocks() {
+		    $blocks = array(
+			    'yith-wcwl-show-public-wishlist' => array(
+				    'style'          => 'yith-wcwl-main',
+				    'script'         => 'jquery-yith-wcwl',
+				    'title'          => _x( 'YITH Public Wishlist Link', '[gutenberg]: block name', 'yith-woocommerce-wishlist' ),
+				    'description'    => _x( 'Shows All Public Wishlist', '[gutenberg]: block description', 'yith-woocommerce-wishlist' ),
+				    'shortcode_name' => 'yith_wcwl_show_public_wishlist',
+
+			    ),
+		    );
+
+		    yith_plugin_fw_gutenberg_add_blocks( $blocks );
+	    }
 
         /**
          * Add premium wishlist views
@@ -308,6 +344,25 @@ if( ! class_exists( 'YITH_WCWL_Shortcode_Premium' ) ) {
 
             return $additional_info;
         }
+
+	    /**
+	     * Show Public Wishlist
+	     *
+	     * @return string HTML markup containing all public wishlists
+	     * @since 2.0.0
+	     */
+	    public static function show_public_wishlist() {
+
+		    $wishlists = YITH_WCWL()->get_wishlists( array( 'user_id' => false, 'wishlist_visibility' => 'public', 'show_empty' => false ));
+		    $atts = array(
+		    	'wishlists' => $wishlists
+		    );
+
+		    $template = yith_wcwl_get_template( 'wishlist-public-list.php', $atts, true );
+
+		    return apply_filters( 'yith_wcwl_public_wishlist_html', $template );
+
+	    }
     }
 }
 
