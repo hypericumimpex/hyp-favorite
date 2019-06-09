@@ -380,6 +380,8 @@
     line-height: 60px;
 }
 
+.yith-license-notice{margin-left: 0;}
+
 /* === Responsive === */
 
 @media (max-width: 767px) {

@@ -41,7 +41,7 @@ $unique_id = mt_rand();
 	                <div class="yith-wcwl-wishlist-select-container">
 	                    <h3><?php echo $popup_title ?></h3>
 	                    <select name="wishlist_id" class="wishlist-select">
-	                        <option value="0" <?php selected( true ) ?> ><?php echo apply_filters( 'yith_wcwl_default_wishlist_name', __( 'My Wishlist', 'yith-woocommerce-wishlist' ) )?></option>
+	                        <option value="0" <?php selected( true ) ?> ><?php echo apply_filters( 'yith_wcwl_default_wishlist_name', get_option( 'yith_wcwl_wishlist_title' ) )?></option>
 	                        <?php if( ! empty( $lists ) ): ?>
 	                            <?php foreach( $lists as $list ):?>
 	                                <?php if( ! $list['is_default'] ): ?>

@@ -3,13 +3,24 @@
 Contributors: yithemes
 Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop
 Requires at least: 4.0
-Tested up to: 5.1.1
-Stable tag: 2.2.9
+Tested up to: 5.2
+Stable tag: 2.2.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://yithemes.com/docs-plugins/yith-woocommerce-wishlist
 
 == Changelog ==
+
+= 2.2.10 - Released: May, 29 - 2019 =
+
+* Tweak Prevent undefined index: user_id when user is loggin
+* Fix: Fixed active status for default wishlist when WPML is active
+* Fix: Fixed active status for default wishlist when WPML is active
+* Fix: fixed the default wishlist name in the multi wishlist select
+* Fix: widget not recognizing current wishlist when WPML is active
+* Fix: notice when sending Promotional email, due to access to legacy attributes
+* Dev: new filter yith_wcwl_wishlist_disabled_for_unauthenticated_user_message_condition
+* Dev: New action 'yith_wcwl_default_user_wishlist'
 
 = 2.2.9 - Released: Apr, 11 - 2019 =
 

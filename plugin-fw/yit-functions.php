@@ -1239,3 +1239,44 @@ if( ! function_exists( 'yith_plugin_fw_get_default_logo' ) ){
 		return YIT_CORE_PLUGIN_URL . '/assets/images/yith-icon.svg';
 	}
 }
+
+if( ! function_exists( 'yith_plugin_fw_load_update_and_licence_files' ) ){
+	/**
+	 * Load premium file for license and update system
+	 *
+	 * @author Andrea Grillo <andrea.grillo@yithemes.com>
+	 *
+	 * @return void
+	 */
+	function yith_plugin_fw_load_update_and_licence_files(){
+		global $plugin_upgrade_fw_data;
+
+		/**
+		 * If the init.php was load by old plugin-fw version
+		 * load the upgrade and license key from local folder
+		 */
+		if( empty( $plugin_upgrade_fw_data ) ){
+			$plugin_upgrade_path = plugin_dir_path( __DIR__ ) . 'plugin-upgrade';
+			if( file_exists( $plugin_upgrade_path ) ){
+				$required_files = array(
+					$plugin_upgrade_path . '/lib/yit-licence.php',
+					$plugin_upgrade_path . '/lib/yit-plugin-licence.php',
+					$plugin_upgrade_path . '/lib/yit-theme-licence.php',
+					$plugin_upgrade_path . '/lib/yit-plugin-upgrade.php'
+				);
+
+				$plugin_upgrade_fw_data = array( '1.0' => $required_files );
+			}
+		}
+
+		if( ! empty( $plugin_upgrade_fw_data && is_array( $plugin_upgrade_fw_data )) ){
+			foreach ( $plugin_upgrade_fw_data as $fw_version=> $core_files ){
+				foreach ( $core_files as $core_file ){
+					if( file_exists( $core_file ) ){
+						include_once $core_file;
+					}
+				}
+			}
+		}
+	}
+}

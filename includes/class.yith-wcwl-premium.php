@@ -320,7 +320,7 @@ if ( !class_exists( 'YITH_WCWL_Premium' ) ) {
 		 */
 		public function add_wishlist_notice() {
 			$disable_wishlist = get_option( 'yith_wcwl_disable_wishlist_for_unauthenticated_users' );
-			if( $disable_wishlist == 'yes' && isset( $_GET['wishlist_notice'] ) && $_GET['wishlist_notice'] == true && ! isset( $_POST['login'] ) && ! isset( $_POST['register'] ) ){
+            if( apply_filters('yith_wcwl_wishlist_disabled_for_unauthenticated_user_message_condition', true) && $disable_wishlist == 'yes' && isset( $_GET['wishlist_notice'] ) && $_GET['wishlist_notice'] == true && ! isset( $_POST['login'] ) && ! isset( $_POST['register'] ) ){
 				wc_add_notice( apply_filters( 'yith_wcwl_wishlist_disabled_for_unauthenticated_user_message', __( 'Please, log in to use the wishlist features', 'yith-woocommerce-wishlist' ) ), 'error' );
 			}
 		}

@@ -12,18 +12,18 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly
 
-if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
+if ( !class_exists( 'YITH_Plugin_Licence' ) ) {
     /**
      * YIT Plugin Licence Panel
      *
      * Setting Page to Manage Plugins
      *
-     * @class      YIT_Plugin_Licence
+     * @class      YITH_Plugin_Licence
      * @package    YITH
      * @since      1.0
      * @author     Andrea Grillo      <andrea.grillo@yithemes.com>
      */
-    class YIT_Plugin_Licence extends YIT_Licence {
+    class YITH_Plugin_Licence extends YITH_Licence {
 
         /**
          * @var array The settings require to add the submenu page "Activation"
@@ -64,8 +64,8 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
 
             $this->_settings = array(
                 'parent_page' => 'yith_plugin_panel',
-                'page_title'  => __( 'License Activation', 'yith-plugin-fw' ),
-                'menu_title'  => __( 'License Activation', 'yith-plugin-fw' ),
+                'page_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
+                'menu_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
                 'capability'  => 'manage_options',
                 'page'        => 'yith_plugins_activation',
             );
@@ -75,63 +75,36 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
             add_action( "wp_ajax_yith_deactivate-{$this->_product_type}", array( $this, 'deactivate' ) );
             add_action( "wp_ajax_yith_update_licence_information-{$this->_product_type}", array( $this, 'update_licence_information' ) );
             add_action( 'yit_licence_after_check', 'yith_plugin_fw_force_regenerate_plugin_update_transient' );
-
-            /** @since 3.0.0 */
-	        if( version_compare( PHP_VERSION, '7.0', '>=' ) ) {
-		        add_action( 'admin_notices', function () {
-			        $this->activate_license_notice();
-		        }, 15 );
-	        }
-
-	        else {
-		        add_action( 'admin_notices', array( $this, 'activate_license_notice' ), 15 );
-            }
         }
 
-        private function _show_activate_license_notice() {
+	    public function lru_esnecil_teg(){return add_query_arg( array( 'page' => 'yith_plugins_activation' ), admin_url( 'admin.php' ) );}
+
+        protected function _show_eciton_esnecil_etavitca() {
             $current_screen      = function_exists( 'get_current_screen' ) ? get_current_screen() : false;
             $show_license_notice = current_user_can( 'update_plugins' ) &&
                                    ( !isset( $_GET[ 'page' ] ) || 'yith_plugins_activation' !== $_GET[ 'page' ] ) &&
                                    !( $current_screen && method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() );
             global $wp_filter;
 
-            if ( isset( $wp_filter[ 'yith_plugin_fw_show_activate_license_notice' ] ) ) {
-                $filter       = $wp_filter[ 'yith_plugin_fw_show_activate_license_notice' ];
-                $v            = yith_plugin_fw_get_version();
-                $a            = explode( '.', $v );
-                $l            = end( $a );
-                $p            = absint( $l );
+            if ( isset( $wp_filter[ 'yith_plugin_fw_show_eciton_esnecil_etavitca' ] ) ) {
+	            $filter = $wp_filter['yith_plugin_fw_show_eciton_esnecil_etavitca'];
+	            $v      = function_exists( 'yith_plugin_fw_get_version' ) ? yith_plugin_fw_get_version() : 10;
+                $a      = explode( '.', $v );
+                $l      = end( $a );
+                $p      = absint( $l );
                 $allowed_hook = isset( $filter[ $p ] ) ? $filter[ $p ] : false;
-                remove_all_filters( 'yith_plugin_fw_show_activate_license_notice' );
+                //remove_all_filters( 'yith_plugin_fw_show_eciton_esnecil_etavitca' );
 
                 if ( $allowed_hook && is_array( $allowed_hook ) ) {
                     $cb = current( $allowed_hook );
                     if ( isset( $cb[ 'function' ] ) && isset( $cb[ 'accepted_args' ] ) ) {
-                        add_filter( 'yith_plugin_fw_show_activate_license_notice', $cb[ 'function' ], 10, $cb[ 'accepted_args' ] );
+                        add_filter( 'yith_plugin_fw_show_eciton_esnecil_etavitca', $cb[ 'function' ], 10, $cb[ 'accepted_args' ] );
                     }
                 }
 
             }
 
-            return apply_filters( 'yith_plugin_fw_show_activate_license_notice', $show_license_notice );
-        }
-
-        /**
-         * print notice with products to activate
-         *
-         * @since 3.0.0
-         */
-        public function activate_license_notice() {
-            if ( $this->_show_activate_license_notice() ) {
-                $products_to_activate = $this->get_to_active_products();
-                if ( !!$products_to_activate ) {
-                    $product_names = array();
-                    foreach ( $products_to_activate as $init => $product ) {
-                        if ( !empty( $product[ 'Name' ] ) )
-                            $product_names[] = $product[ 'Name' ];
-                    }
-                }
-            }
+            return apply_filters( 'yith_plugin_fw_show_eciton_esnecil_etavitca', $show_license_notice );
         }
 
         /**
@@ -211,12 +184,12 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
 /**
  * Main instance of plugin
  *
- * @return YIT_Plugin_Licence object of license class
+ * @return YITH_Plugin_Licence object of license class
  * @since  1.0
  * @author Andrea Grillo <andrea.grillo@yithemes.com>
  */
-if ( !function_exists( 'YIT_Plugin_Licence' ) ) {
-    function YIT_Plugin_Licence() {
-        return YIT_Plugin_Licence::instance();
+if ( !function_exists( 'YITH_Plugin_Licence' ) ) {
+    function YITH_Plugin_Licence() {
+        return YITH_Plugin_Licence::instance();
     }
 }

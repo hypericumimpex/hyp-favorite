@@ -279,7 +279,7 @@ if( !class_exists( 'YITH_WCWL_Promotion_Email' ) ) {
 					'user_last_name' => $this->user->billing_first_name,
 					'product_name' => $this->object->get_title(),
 					'product_price' => $this->object->get_price(),
-					'add_to_cart_url' => esc_url( add_query_arg( 'add-to-cart', $this->object->get_id(), get_permalink( $this->object->id ) ) ),
+					'add_to_cart_url' => esc_url( add_query_arg( 'add-to-cart', $this->object->get_id(), get_permalink( $this->object->get_id() ) ) ),
 				),
 				! isset( $this->coupon ) ? array() : array(
 					'coupon_code' => yit_get_prop( $this->coupon, 'code' ),

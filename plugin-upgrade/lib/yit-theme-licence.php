@@ -12,18 +12,18 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly
 
-if ( !class_exists( 'YIT_Theme_Licence' ) ) {
+if ( !class_exists( 'YITH_Theme_Licence' ) ) {
     /**
      * YIT Plugin Licence Panel
      *
      * Setting Page to Manage Plugins
      *
-     * @class      YIT_Theme_Licence
+     * @class      YITH_Theme_Licence
      * @package    YITH
      * @since      1.0
      * @author     Andrea Grillo      <andrea.grillo@yithemes.com>
      */
-    class YIT_Theme_Licence extends YIT_Licence {
+    class YITH_Theme_Licence extends YITH_Licence {
 
         /**
          * @var array The settings require to add the submenu page "Activation"
@@ -66,8 +66,8 @@ if ( !class_exists( 'YIT_Theme_Licence' ) ) {
 
             $this->_settings = array(
                 'parent_page' => 'yit_product_panel',
-                'page_title'  => __( 'License Activation', 'yith-plugin-fw' ),
-                'menu_title'  => __( 'License Activation', 'yith-plugin-fw' ),
+                'page_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
+                'menu_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
                 'capability'  => 'manage_options',
                 'page'        => 'yith_plugins_activation',
             );
@@ -106,16 +106,16 @@ if ( !class_exists( 'YIT_Theme_Licence' ) ) {
 
             $admin_tree = array(
                 'parent_slug' => apply_filters( 'yit_licence_parent_slug', 'yit_panel' ),
-                'page_title'  => __( 'License Activation', 'yith-plugin-fw' ),
-                'menu_title'  => __( 'License Activation', 'yith-plugin-fw' ),
+                'page_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
+                'menu_title'  => __( 'License Activation', 'yith-plugin-upgrade-fw' ),
                 'capability'  => 'manage_options',
                 'menu_slug'   => 'yit_panel_license',
                 'function'    => 'show_activation_panel'
             );
 
             add_submenu_page( $admin_tree['parent_slug'],
-                sprintf( __( '%s', 'yith-plugin-fw' ), $admin_tree['page_title'] ),
-                sprintf( __( '%s', 'yith-plugin-fw' ), $admin_tree['menu_title'] ),
+                sprintf( __( '%s', 'yith-plugin-upgrade-fw' ), $admin_tree['page_title'] ),
+                sprintf( __( '%s', 'yith-plugin-upgrade-fw' ), $admin_tree['menu_title'] ),
                 $admin_tree['capability'],
                 $admin_tree['menu_slug'],
                 array( $this, $admin_tree['function'] )
@@ -156,14 +156,14 @@ if ( !class_exists( 'YIT_Theme_Licence' ) ) {
         public function get_old_licence_message() {
             ob_start(); ?>
             <div class="activation-faq">
-                <h3><?php _e( 'I cannot find the license key for activating the theme I have bought some time ago. Where can I find it?', 'yith-plugin-fw' ) ?></h3>
+                <h3><?php _e( 'I cannot find the license key for activating the theme I have bought some time ago. Where can I find it?', 'yith-plugin-upgrade-fw' ) ?></h3>
 
                 <p>
                     <?php
                     _e( 'If you have purchased one of our products before 27 January 2015, you can benefit from support and updates (the services offered with the license)
                     until 27 January 2016 and you do not have to purchase it again to get a new license key, because, before this date, your license used to be activated automatically by our system.
                     After 27 January 2016, instead, if you want to benefit from support and updates you have to buy a new license and activate it through the license key you will be
-                    provided with and that you can find in your YITH account, in section "My licenses".', 'yith-plugin-fw' )
+                    provided with and that you can find in your YITH account, in section "My licenses".', 'yith-plugin-upgrade-fw' )
                     ?>
                 </p>
             </div>
@@ -184,8 +184,8 @@ if ( !class_exists( 'YIT_Theme_Licence' ) ) {
  * @since  1.0
  * @author Andrea Grillo <andrea.grillo@yithemes.com>
  */
-if ( !function_exists( 'YIT_Theme_Licence' ) ) {
-    function YIT_Theme_Licence() {
-        return YIT_Theme_Licence::instance();
+if ( !function_exists( 'YITH_Theme_Licence' ) ) {
+    function YITH_Theme_Licence() {
+        return YITH_Theme_Licence::instance();
     }
 }

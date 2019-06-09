@@ -88,7 +88,6 @@ if ( !class_exists( 'YIT_Assets' ) ) {
             ) );
 
             wp_enqueue_style( 'yith-plugin-fw-admin', YIT_CORE_PLUGIN_URL . '/assets/css/admin.css', array(), $this->version );
-
         }
     }
 }

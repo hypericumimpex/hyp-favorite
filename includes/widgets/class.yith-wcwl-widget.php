@@ -48,7 +48,7 @@ if( !class_exists( 'YITH_WCWL_Widget' ) ) {
 
             $current_wishlist = false;
             $active = false;
-
+            
             if ( is_page( $wishlist_page_id ) ){
                 // retrieve options from query string
                 $action_params = get_query_var( YITH_WCWL()->wishlist_param, false );
@@ -60,6 +60,7 @@ if( !class_exists( 'YITH_WCWL_Widget' ) ) {
                 if( $action == 'view' ){
                     $active = 'wishlist';
                     $current_wishlist = ( isset( $action_params[1] ) ) ? $action_params[1] : false;
+                    $current_wishlist = ( ! $current_wishlist ) ? get_query_var( 'wishlist_id', false ) : $current_wishlist;
 
                     if( ! $current_wishlist && isset( $user_id ) && $user_id = get_current_user_id() ){
                         $current_wishlist = 'default';
@@ -68,7 +69,7 @@ if( !class_exists( 'YITH_WCWL_Widget' ) ) {
                 elseif( $action == 'user' ){
                     $active = 'wishlist';
                     $user_id = isset( $_GET['user_id'] ) ? $_GET['user_id'] : false;
-                    $user_id = ( empty( $user_id ) ) ? $action_params[1] : false;
+                    $user_id = ( empty( $user_id ) ) ? $action_params[1] : $user_id;
 
                     if( $user_id == get_current_user_id() ){
                         $current_wishlist = 'default';
