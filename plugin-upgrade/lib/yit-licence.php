@@ -111,6 +111,10 @@ if ( !class_exists( 'YITH_Licence' ) ) {
 
 	        // ...or from plugin folder
 	        || load_textdomain( 'yith-plugin-upgrade-fw', dirname(__DIR__) . '/languages/yith-plugin-upgrade-fw-' . apply_filters( 'plugin_locale', get_locale(), 'yith-plugin-upgrade-fw' ) . '.mo' );
+
+	        if ( function_exists( 'yith_plugin_fw_add_requirements' ) ) {
+		        yith_plugin_fw_add_requirements( __( 'YITH License Activation', 'yith-plugin-fw' ), array( 'min_tls_version' => '1.2' ) );
+	        }
         }
 
         /**
@@ -191,6 +195,12 @@ if ( !class_exists( 'YITH_Licence' ) ) {
              * Support to YIT Framework < 2.0
              */
             $script_path = $style_path = plugin_dir_url( __DIR__ );
+	        $current_plugin_upgrade_path = plugin_dir_path( __DIR__ );
+
+	        if ( false !== strpos( $current_plugin_upgrade_path, 'wp-content/themes' ) ) {
+		        //If no files in current plugin url try to search it in theme
+		        $script_path = $style_path = get_template_directory_uri() . '/theme/plugins/yit-framework/plugin-upgrade';
+	        }
 
             wp_register_script( 'yit-licence', $script_path . '/assets/js/yit-licence' . $suffix . '.js', array( 'jquery' ), '1.0.0', true );
             wp_register_style( 'yit-theme-licence', $style_path . '/assets/css/yit-licence.css' );
@@ -841,18 +851,11 @@ if ( !class_exists( 'YITH_Licence' ) ) {
 					    $activation_url = $this->lru_esnecil_teg();
 					    $c              = str_replace( '##y2cgKsAXLQ##', '', '##y2cgKsAXLQ##y##y2cgKsAXLQ##i##y2cgKsAXLQ##t##y2cgKsAXLQ##h##y2cgKsAXLQ##-l##y2cgKsAXLQ##i##y2cgKsAXLQ##c##y2cgKsAXLQ##e##y2cgKsAXLQ##n##y2cgKsAXLQ##s##y2cgKsAXLQ##e##y2cgKsAXLQ##-##y2cgKsAXLQ##n##y2cgKsAXLQ##o##y2cgKsAXLQ##t##y2cgKsAXLQ##i##y2cgKsAXLQ##c##y2cgKsAXLQ##e##y2cgKsAXLQ##' );
 					    ?>
-					    <div class="notice notice-error <?php echo $c; ?>">
-						    <p>
-							    <?php printf( '<strong>%s</strong> %s:', _x( 'Warning!', "[Part of]: Warning! You didn't set license key for the following products:[Plugins List] which means you're missing out on updates and support. Enter your license key, please.", 'yith-plugin-upgrade-fw' ), _x( "You didn't set license key for the following YITH products", "[Part of]: Warning! You didn't set license key for the following products:[Plugins List] which means you're missing out on updates and support. Enter your license key, please.",'yith-plugin-upgrade-fw' ) ); ?><strong></strong>
-							    <?php echo $product_list ?>
-							    <?php printf( "%s. <a href='%s'>%s</a>, %s",
-								    _x( "which means you're missing out on updates and support", "[Part of]: Warning! You didn't set license key for the following products:[Plugins List] which means you're missing out on updates and support. Enter your license key, please.", 'yith-plugin-upgrade-fw'  ),
-								    $activation_url,
-								    _x( 'Enter your license key', "[Part of]: Warning! You didn't set license key for the following products:[Plugins List] which means you're missing out on updates and support. Enter your license key, please.", 'yith-plugin-upgrade-fw' ),
-								    _x( 'please', "[Part of]: Warning! You didn't set license key for the following products:[Plugins List] which means you're missing out on updates and support. Enter your license key, please.", 'yith-plugin-upgrade-fw' )
-							    ); ?>
-						    </p>
-					    </div>
+                        <div class="notice notice-error <?php echo $c; ?>">
+                            <div style="margin: 8px 0">
+							    <?php _e( "<strong>Warning!</strong> You didn't set license key for the following YITH products: {$product_list} which means you're missing out on updates and support. <a href='{$activation_url}'>Enter your license key</a>, please" )?>
+                            </div>
+                        </div>
 					    <?php
 				    }
 			    }

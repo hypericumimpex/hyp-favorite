@@ -1007,6 +1007,7 @@ if ( !function_exists( 'yith_plugin_fw_get_field' ) ) {
 
 
         $field_template = yith_plugin_fw_get_field_template_path( $field );
+
         if ( $field_template ) {
             if ( !$echo )
                 ob_start();
@@ -1035,6 +1036,7 @@ if ( !function_exists( 'yith_plugin_fw_get_field_template_path' ) ) {
             return false;
 
         $field_template = YIT_CORE_PLUGIN_TEMPLATE_PATH . '/fields/' . sanitize_title( $field[ 'type' ] ) . '.php';
+
         $field_template = apply_filters( 'yith_plugin_fw_get_field_template_path', $field_template, $field );
 
         return file_exists( $field_template ) ? $field_template : false;
@@ -1240,6 +1242,79 @@ if( ! function_exists( 'yith_plugin_fw_get_default_logo' ) ){
 	}
 }
 
+if ( ! function_exists( 'yith_set_wrapper_class' ) ) {
+	/**
+	 * Return the class for the new plugin panel style.
+	 *
+	 * @param $class array|string the list of additional classes to add inside the panel wrapper.
+	 *
+	 * @return string
+	 *
+	 * @author Emanuela Castorina
+	 */
+	function yith_set_wrapper_class( $class = '' ) {
+		$new_class = 'yith-plugin-ui';
+		$class     = ( ! empty( $class ) && is_array( $class ) ) ? implode( ' ', $class ) : $class;
+
+		return $new_class . ' ' . $class;
+	}
+}
+
+if( ! function_exists('yith_get_date_format') ){
+	/**
+	 * get all available date format
+	 * @since 3.1
+	 * @author Salvatore Strano
+	 * @return array
+	 */
+
+	function yith_get_date_format( $js = true ){
+
+		$date_formats = array(
+			'F j, Y' => 'F j, Y',
+			'Y-m-d'  => 'Y-m-d',
+			'm/d/Y'  => 'm/d/Y',
+			'd/m/Y'  => 'd/m/Y',
+		);
+
+		if( $js  ){
+			$date_formats = array(
+				'MM d, yy'     => 'F j, Y',
+				'yy-mm-dd'     => 'Y-m-d',
+				'mm/dd/yy'     => 'm/d/Y',
+				'dd/mm/yy'     => 'd/m/Y',
+			);
+		}
+
+		return apply_filters( 'yith_plugin_fw_date_formats', $date_formats, $js) ;
+	}
+}
+
+
+if( ! function_exists('yith_format_toggle_title') ) {
+	/**
+	 * replace the placeholders with the values of the element id
+	 * for toggle element field.
+	 *
+	 * @return array
+	 * @author Salvatore Strano
+	 * @since 3.1
+	 */
+
+	function yith_format_toggle_title( $title, $value ) {
+		preg_match_all( '/(?<=\%%).+?(?=\%%)/', $title, $matches );
+		if ( isset( $matches[0] ) ) {
+			foreach ( $matches[0] as $element_id ) {
+				if ( isset( $value[ $element_id ] ) ) {
+					$title = str_replace( '%%' . $element_id . '%%', $value[ $element_id ], $title );
+				}
+			}
+		}
+
+		return $title;
+	}
+}
+
 if( ! function_exists( 'yith_plugin_fw_load_update_and_licence_files' ) ){
 	/**
 	 * Load premium file for license and update system
@@ -1269,7 +1344,7 @@ if( ! function_exists( 'yith_plugin_fw_load_update_and_licence_files' ) ){
 			}
 		}
 
-		if( ! empty( $plugin_upgrade_fw_data && is_array( $plugin_upgrade_fw_data )) ){
+		if( ! empty( $plugin_upgrade_fw_data ) && is_array( $plugin_upgrade_fw_data ) ){
 			foreach ( $plugin_upgrade_fw_data as $fw_version=> $core_files ){
 				foreach ( $core_files as $core_file ){
 					if( file_exists( $core_file ) ){
@@ -1277,6 +1352,39 @@ if( ! function_exists( 'yith_plugin_fw_load_update_and_licence_files' ) ){
 					}
 				}
 			}
+		}
+	}
+}
+
+if ( ! function_exists( 'yith_plugin_fw_remove_duplicate_classes' ) ) {
+	/**
+	 * Remove the duplicate classes from a string.
+	 *
+	 * @param  $classes string
+	 *
+	 * @return string
+	 *
+	 * @since 3.2.2
+	 * @author Emanuela Castorina <emanuela.castorina@yithemes.com>
+	 */
+	function yith_plugin_fw_remove_duplicate_classes( $classes ) {
+		$class_array  = explode( ' ', $classes );
+		$class_unique = array_unique( array_filter( $class_array ) );
+		if ( $class_unique ) {
+			$classes = implode( ' ', $class_unique );
+		}
+
+		return $classes;
+	}
+}
+
+if ( ! function_exists( 'yith_plugin_fw_add_requirements' ) ) {
+
+	function yith_plugin_fw_add_requirements( $plugin_name, $requirements ) {
+		if ( ! empty( $requirements ) ) {
+			YITH_System_Status()->add_requirements( $plugin_name, $requirements );
+
+
 		}
 	}
 }

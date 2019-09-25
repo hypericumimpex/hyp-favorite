@@ -108,6 +108,7 @@ if ( !class_exists( 'YITH_WCWL_Premium' ) ) {
 		 * @since 2.0.0
 		 */
 		public function add_wishlist() {
+		    error_log(print_r("Añadimos la Wishlist hermanazo",true));
 			global $wpdb;
 
 			$wishlist_name = ( ! empty( YITH_WCWL()->details['wishlist_name'] ) ) ? YITH_WCWL()->details['wishlist_name'] : false;
@@ -165,7 +166,8 @@ if ( !class_exists( 'YITH_WCWL_Premium' ) ) {
 
 			if( $result ){
 				YITH_WCWL()->details['wishlist_token'] = $token;
-				return $wpdb->insert_id;
+
+				return  apply_filters( 'yith_wcwl_wishlist_correctly_created',$wpdb->insert_id );
 			}
 			else{
 				YITH_WCWL()->errors[] = __( 'Error occurred while creating a new wishlist.', 'yith-woocommerce-wishlist' );

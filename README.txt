@@ -4,12 +4,27 @@ Contributors: yithemes
 Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop
 Requires at least: 4.0
 Tested up to: 5.2
-Stable tag: 2.2.10
+Stable tag: 2.2.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://yithemes.com/docs-plugins/yith-woocommerce-wishlist
 
 == Changelog ==
+
+= 2.2.12 - Released: Aug, 12 - 2019 =
+
+* New: WooCommerce 3.7.0 RC2 support
+* New: input to copy wishlist link and share it anywhere
+* Update: internal plugin framework
+* Update: Italian language
+* Fix: redirect url if there is more than one parameter on the url
+* Fix: changed escape for share link, to properly escape url special characters
+
+= 2.2.11 - Released: Jul, 18 - 2019 =
+
+* Update: internal plugin framework
+* Tweak: improved performance on wishlist page, when user is a guest and store has huge catalog (thanks to Dave)
+* Dev: add filter yith_wcwl_wishlist_correctly_created on add_wishlist function
 
 = 2.2.10 - Released: May, 29 - 2019 =
 

@@ -1,13 +1,13 @@
 <?php
 /**
  * Framework Name: YIT Plugin Framework
- * Version: 3.2.1
+ * Version: 3.3.8
  * Author: YITHEMES
  * Text Domain: yith-plugin-fw
  * Domain Path: /languages/
  *
  * @author  Your Inspiration Themes
- * @version 3.1.26
+ * @version 3.3.8
  */
 /**
  * This file belongs to the YIT Plugin Framework.
@@ -21,6 +21,8 @@
 if ( ! defined ( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly
+
+
 
 if ( ! function_exists ( 'yit_maybe_plugin_fw_loader' ) ) {
     /**
@@ -52,6 +54,12 @@ if ( ! function_exists ( 'yit_maybe_plugin_fw_loader' ) ) {
         } else {
             $plugin_fw_data = array ( $framework_data[ 'Version' ] => $plugin_fw_main_file );
         }
+
+	    if ( ! defined( 'YITH_PLUGIN_FW_VERSION' ) ) {
+		    $keys    = array_keys( $plugin_fw_data );
+		    $version = empty( $plugin_fw_data ) ? '1.0.0' : array_pop( $keys );
+		    define( 'YITH_PLUGIN_FW_VERSION', $version );
+	    }
 
         //Check for license & upgrade classes
 	    $upgrade_fw_init_file = $plugin_path . 'plugin-upgrade/init.php';

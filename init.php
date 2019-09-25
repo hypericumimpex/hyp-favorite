@@ -3,21 +3,20 @@
  * Plugin Name: HYP Favorite
  * Plugin URI: https://github.com/hypericumimpex/hyp-favorite/
  * Description: <code><strong>HYP Favorite</strong></code> oferă utilizatorilor posibilitatea de a crea, gestiona și partaja liste cu produse favorite.
- * Version: 2.2.10
+ * Version: 2.2.12
  * Author: Romeo C.
  * Author URI: https://github.com/hypericumimpex/
  * Text Domain: yith-woocommerce-wishlist
  * Domain Path: /languages/
  * WC requires at least: 2.5.0
- * WC tested up to: 3.6.4
+ * WC tested up to: 3.7.0
  *
  * @author Romeo C.
  * @package HYP Favorite
  * @version 2.0.0
  */
 
-
-/*  Copyright 2013  Hypericum
+/*  Copyright 2013  Your Inspiration Themes  (email : plugins@yithemes.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -29,7 +28,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program;
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
